@@ -1,3 +1,5 @@
+import DoorIcon from "./DoorIcon.js";
+
 export default () => (
   <section className="relative py-20">
     <div
@@ -31,14 +33,13 @@ export default () => (
         </div>
         <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
           <div className="md:pr-12">
-            <div className="text-pink-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-pink-300">
-              <i className="fas fa-rocket text-xl" />
-            </div>
-            <h3 className="text-3xl font-semibold">A growing company</h3>
+            <DoorIcon />
+            <h3 className="text-3xl font-semibold">
+              И тут ещё какая-то пепега!
+            </h3>
             <p className="mt-4 text-lg leading-relaxed text-gray-600">
-              The extension comes with three pre-built pages to help you get
-              started faster. You can change the text and images and you're good
-              to go.
+              Кстати, иконка двери должна открываться, если по ней ткнуть или
+              провести мышкой.
             </p>
             <ul className="list-none mt-6">
               <li className="py-2">
@@ -49,9 +50,7 @@ export default () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">
-                      Carefully crafted components
-                    </h4>
+                    <h4 className="text-gray-600">Можно даже сделать</h4>
                   </div>
                 </div>
               </li>
@@ -63,7 +62,7 @@ export default () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">Amazing page examples</h4>
+                    <h4 className="text-gray-600">Красивый такой список</h4>
                   </div>
                 </div>
               </li>
@@ -75,7 +74,7 @@ export default () => (
                     </span>
                   </div>
                   <div>
-                    <h4 className="text-gray-600">Dynamic components</h4>
+                    <h4 className="text-gray-600">Всякой полезной шняги</h4>
                   </div>
                 </div>
               </li>

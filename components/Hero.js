@@ -27,7 +27,14 @@ export default () => (
             <p className="mt-4 text-lg text-gray-300">
               Немного вдохновляющего текста, который бы объяснял, что даёт этот
               сайт посетителю. Каритинку на задник можно выбрать{" "}
-              <a href="//unsplash.com">вот тут</a>.
+              <a
+                href="//unsplash.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                вот тут
+              </a>
+              . И сразу сюда дать контакты: телефон, вотсапп, телеграм, итд.
             </p>
           </div>
         </div>

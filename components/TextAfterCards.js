@@ -8,30 +8,23 @@ export default () => (
         <FontAwesomeIcon icon={faUserFriends} className="text-xl" />
       </div>
       <h3 className="text-3xl mb-2 font-semibold leading-normal">
-        Working with us is a pleasure
+        Описать алгоритм покупки?
       </h3>
       <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
-        Don't let your uses guess by attaching tooltips and popoves to any
-        element. Just make sure you enable them first via JavaScript.
+        Сначала мы присылаем волшебных единорогов, которые не входя в квартиру
+        делают нужные замеры и всё такое. На это как правило уходит 10-15 минут.
       </p>
       <p className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
-        The kit comes with three pre-built pages to help you get started faster.
-        You can change the text and images and you're good to go. Just make sure
-        you enable them first via JavaScript.
+        Затем вы прислыаете нам деньги (сбер/альфа/тинька) и мы присылаем двери,
+        вместе с человеком, который эти двери установит.
       </p>
-      <a
-        href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
-        className="font-bold text-gray-800 mt-8"
-      >
-        Check Tailwind Starter Kit!
-      </a>
     </div>
 
     <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
       <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
         <img
           alt="..."
-          src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
+          src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
           className="w-full align-middle rounded-t-lg"
         />
         <blockquote className="relative p-8 mb-4">
@@ -50,10 +43,12 @@ export default () => (
               className="text-pink-600 fill-current"
             />
           </svg>
-          <h4 className="text-xl font-bold text-white">Top Notch Services</h4>
+          <h4 className="text-xl font-bold text-white">
+            Какая-то ещё полезная инфа
+          </h4>
           <p className="text-md font-light mt-2 text-white">
-            The Arctic Ocean freezes every winter and much of the sea-ice then
-            thaws every summer, and that process will continue whatever happens.
+            Может быть про то, как мы принимаем деньги, или что за двери, хз,
+            тут надо думать.
           </p>
         </blockquote>
       </div>

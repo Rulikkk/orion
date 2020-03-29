@@ -24,24 +24,35 @@ export default function Landing() {
 
         <CardsSection>
           <div className="flex flex-wrap">
-            <Card icon={faAward} header="Awarded Agency" className="pt-6">
-              Divide details about your product or agency work into parts. A
-              paragraph describing a feature will be enough.
+            <Card
+              icon={faAward}
+              header="Сказать что мы 20 лет на рынке"
+              className="lg:pt-12 pt-6"
+            >
+              У нас самые тёплые отношения со всем поставщиками и т.д.
             </Card>
 
-            <Card icon={faRetweet} header="Free Revisions" circleColor="blue">
-              Keep you user engaged by providing meaningful information.
-              Remember that by this time, the user is curious.
+            <Card icon={faRetweet} header="Доставка" circleColor="blue">
+              Коротко объяснить как и почём происходит доставка. Иконки в
+              кружочки можно выбирать{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="//fontawesome.com/icons?d=gallery&m=free"
+              >
+                вот тут
+              </a>
+              .
             </Card>
 
             <Card
               icon={faFingerprint}
-              header="Verified Company"
+              header="Может быть, что-то про широкий выбор"
               circleColor="green"
               className="pt-6"
             >
-              Write a few lines about each one. A paragraph describing a feature
-              will be enough. Keep you user engaged!
+              Какие вообще есть двери, какие лучше выбирать и как мы в этом
+              помогаем.
             </Card>
           </div>
 

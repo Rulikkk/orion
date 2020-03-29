@@ -12,7 +12,8 @@ a {
   @apply text-blue-600 underline;
 }
 
+@tailwind components;
+
 /* purgecss end ignore */
 
-@tailwind components;
 @tailwind utilities;

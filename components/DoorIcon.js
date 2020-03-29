@@ -1,3 +1,5 @@
+// import "./DoorIcon.module.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDoorOpen, faDoorClosed } from "@fortawesome/free-solid-svg-icons";
 

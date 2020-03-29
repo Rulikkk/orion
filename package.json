@@ -9,6 +9,7 @@
     "react-dom": "16.13.1"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "2.1.0",
     "tailwindcss": "1.2.0",
     "postcss-preset-env": "6.7.0",
     "@fortawesome/fontawesome-svg-core": "1.2.28",

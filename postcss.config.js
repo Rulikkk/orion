@@ -11,7 +11,6 @@ module.exports = {
   plugins: [
     "tailwindcss",
     "postcss-preset-env",
-    ...[purgecss]
-    // ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
+    ...(process.env.NODE_ENV === "production" ? [purgecss] : [])
   ]
 };

@@ -9,7 +9,7 @@ export default () => (
       className="absolute top-0 w-full h-full bg-center bg-cover"
       style={{
         backgroundImage:
-          "url('https://images.unsplash.com/photo-1527276826904-9c2275f441e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80')"
+          "url('https://images.unsplash.com/photo-1527276826904-9c2275f441e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')"
       }}
     >
       <span

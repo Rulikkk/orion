@@ -23,15 +23,8 @@ export default () => (
     </div>
 
     <div className="container mx-auto px-4">
-      <div className="items-center flex flex-wrap">
-        <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img
-            alt="..."
-            className="max-w-full rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-          />
-        </div>
-        <div className="w-full md:w-5/12 ml-auto mr-auto px-4">
+      <div className="items-center flex flex-wrap flex-row-reverse">
+        <div className="w-full md:w-6/12 ml-auto mr-auto px-4">
           <div className="md:pr-12">
             <DoorIcon />
             <h3 className="text-3xl font-semibold">
@@ -80,6 +73,13 @@ export default () => (
               </li>
             </ul>
           </div>
+        </div>
+        <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
+          <img
+            alt="..."
+            className="max-w-full rounded-lg shadow-lg"
+            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+          />
         </div>
       </div>
     </div>

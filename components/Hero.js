@@ -1,4 +1,4 @@
-export default () => (
+export default ({ children }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center"
     style={{
@@ -20,17 +20,7 @@ export default () => (
     <div className="container relative mx-auto">
       <div className="items-center flex flex-wrap">
         <div className="w-full lg:w-8/12 px-4 ml-auto mr-auto text-center">
-          <h1 className="text-white font-semibold text-5xl">
-            Магазин дверей «Орион»
-          </h1>
-          <p className="mt-4 text-lg text-gray-300">
-            Немного вдохновляющего текста, который бы объяснял, что даёт этот
-            сайт посетителю. Каритинку на задник можно выбрать{" "}
-            <a href="//unsplash.com" target="_blank" rel="noopener noreferrer">
-              вот тут
-            </a>
-            . И сразу сюда дать контакты: телефон, вотсапп, телеграм, итд.
-          </p>
+          {children}
         </div>
       </div>
     </div>

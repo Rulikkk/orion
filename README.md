@@ -1,6 +1,6 @@
 # Orion Door Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a10602d3-7e89-49bf-a2e6-dae52b3cbba8/deploy-status)](https://app.netlify.com/sites/kind-einstein-1fe6f4/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a10602d3-7e89-49bf-a2e6-dae52b3cbba8/deploy-status)](https://app.netlify.com/sites/dveri-orion-ru/deploys)
 
 ## How to use
 

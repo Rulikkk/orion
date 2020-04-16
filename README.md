@@ -8,7 +8,7 @@ Download the code and then:
 
 ```sh
 yarn
-yarb run dev
+yarn run dev
 ```
 
 or:

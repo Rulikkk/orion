@@ -50,7 +50,7 @@ export default function Landing() {
               icon={faAlignJustify}
               header="Широкий выбор в кратчайшие сроки"
               circleColor="green"
-              className="pt-6"
+              className="md:pt-6"
             >
               Двери всех цветов и с различным покрытием: эмаль, шпон, ПВХ,
               экошпон, ламинат.

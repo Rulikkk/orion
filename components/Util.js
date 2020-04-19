@@ -20,7 +20,7 @@ const CardSection = ({ children }) => (
 
 const Phone = ({ children }) => (
   <p className="mt-4">
-    <a className="text-xl text-gray-300 " href={`tel:${children}`}>
+    <a className="text-xl text-white text-shadow" href={`tel:${children}`}>
       {children}
     </a>
   </p>

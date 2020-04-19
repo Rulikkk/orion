@@ -1,3 +1,5 @@
+import styles from "./Hero.module.css";
+
 export default ({ children }) => (
   <div
     className="relative pt-16 pb-32 flex content-center items-center justify-center"
@@ -6,15 +8,11 @@ export default ({ children }) => (
     }}
   >
     <div
-      className="absolute top-0 w-full h-full bg-center bg-cover"
-      style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1527276826904-9c2275f441e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80')"
-      }}
+      className={`${styles.bg} absolute top-0 w-full h-full bg-center bg-cover`}
     >
       <span
         id="blackOverlay"
-        className="w-full h-full absolute opacity-75 bg-black"
+        className="w-full h-full absolute opacity-50 bg-black"
       />
     </div>
     <div className="container relative mx-auto">

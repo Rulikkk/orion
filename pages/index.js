@@ -23,11 +23,11 @@ export default function Landing() {
       {/* <Navbar transparent /> */}
       <main>
         <Hero>
-          <h1 className="text-white font-semibold leading-tight text-5xl ">
+          <h1 className="text-white text-shadow font-semibold leading-tight text-5xl">
             Ма&shy;га&shy;зин меж&shy;ком&shy;нат&shy;ных две&shy;рей «Орион»
           </h1>
           <Phone>+7 (987) 239-06-42</Phone>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-300 text-shadow">
             г. Набережные Челны, Московский проспект 161, Дом мебели
           </p>
         </Hero>

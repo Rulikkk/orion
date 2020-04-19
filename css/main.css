@@ -17,3 +17,7 @@ a {
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+.text-shadow {
+  text-shadow: 0.1em 0.1em 0.1em black;
+}

@@ -24,7 +24,7 @@ export default function Landing() {
       <main>
         <Hero>
           <h1 className="text-white font-semibold leading-tight text-5xl ">
-            Магазин межкомнатных дверей «Орион»
+            Ма&shy;га&shy;зин меж&shy;ком&shy;нат&shy;ных две&shy;рей «Орион»
           </h1>
           <Phone>+7 (987) 239-06-42</Phone>
           <p className="text-lg text-gray-300">

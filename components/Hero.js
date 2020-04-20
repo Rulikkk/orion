@@ -1,4 +1,4 @@
-import styles from "./Hero.module.css";
+// import styles from "./Hero.module.css";
 
 export default ({ children }) => (
   <div
@@ -8,12 +8,19 @@ export default ({ children }) => (
     }}
   >
     <div
-      className={`${styles.bg} absolute top-0 w-full h-full bg-center bg-cover`}
+      className={`absolute overflow-hidden top-0 w-full h-full bg-center bg-cover`}
+      // style={{ backgroundImage: `url(${require("../public/bg.jpg")})` }}
     >
-      <span
-        id="blackOverlay"
-        className="w-full h-full absolute opacity-50 bg-black"
-      />
+      <picture>
+        <source srcSet={require("../public/bg.jpg?webp")} type="image/webp" />
+        <source srcSet={require("../public/bg.jpg")} type="image/jpeg" />
+        <img
+          className="w-full h-full object-cover object-center pointer-events-none absolute"
+          src={require("../public/bg.jpg")}
+          alt=""
+        />
+      </picture>
+      <span className="w-full h-full absolute opacity-50 bg-black" />
     </div>
     <div className="container relative mx-auto">
       <div className="items-center flex flex-wrap">

@@ -1,7 +1,10 @@
 const subItems = (child, baseIndex) =>
   child.map((item, index) => (
     <li key={`${baseIndex}.${index}`} className="py-2">
-      <div className="border-l-4 border-pink-200 ml-3">
+      <div
+        className="border-l-4 border-pink-200"
+        style={{ marginLeft: "1.8rem" }}
+      >
         <h4 className="text-gray-600 pl-2">{item}</h4>
       </div>
     </li>

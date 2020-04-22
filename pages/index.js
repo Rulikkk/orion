@@ -48,7 +48,7 @@ export default function Landing() {
 
             <Card
               icon={faAlignJustify}
-              header="Широкий выбор в кратчайшие сроки"
+              header="Широкий выбор и быстрая доставка"
               circleColor="green"
               className="md:pt-6"
             >

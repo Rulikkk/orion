@@ -25,8 +25,8 @@ const plainItem = (child, index) => (
   </li>
 );
 
-export default ({ children }) => (
-  <ul className="list-none mt-6">
+export default ({ children, className = "" }) => (
+  <ul className={`list-none ${className}`}>
     {children.map((child, index) =>
       Array.isArray(child) ? subItems(child, index) : plainItem(child, index)
     )}

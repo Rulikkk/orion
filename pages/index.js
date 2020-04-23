@@ -1,5 +1,4 @@
 // import Navbar from "../components/Navbar.js";
-// import Footer from "../components/Footer.js";
 // import SomeForm from "../components/SomeForm.js";
 // import BlockOfPoints from "../components/BlockOfPoints.js";
 // import HereAreOurHeroes from "../components/HereAreOurHeroes.js"
@@ -9,8 +8,10 @@ import {
   faWallet,
   faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
+
 import Hero from "../components/Hero.js";
 import Card from "../components/Card.js";
+import Footer from "../components/Footer.js";
 import BigCard from "../components/BigCard.js";
 import FancyList from "../components/FancyList.js";
 import PriceTable from "../components/PriceTable.js";
@@ -21,17 +22,21 @@ export default function Landing() {
   return (
     <>
       {/* <Navbar transparent /> */}
-      <main>
-        <Hero>
-          <h1 className="text-white text-shadow font-semibold leading-tight text-5xl">
-            Ма&shy;га&shy;зин меж&shy;ком&shy;нат&shy;ных две&shy;рей «Орион»
-          </h1>
-          <Phone>+7 (987) 239-06-42</Phone>
-          <p className="text-lg text-gray-300 text-shadow">
-            г. Набережные Челны, Московский проспект 161, Дом мебели
-          </p>
-        </Hero>
 
+      <Hero>
+        <h1 className="text-white text-shadow font-semibold leading-tight text-5xl">
+          Ма&shy;га&shy;зин меж&shy;ком&shy;нат&shy;ных две&shy;рей «Орион»
+        </h1>
+        <p className="mt-4">
+          <Phone className="text-xl text-white text-shadow">
+            +7 (987) 239-06-42
+          </Phone>
+        </p>
+        <p className="text-lg text-gray-300 text-shadow">
+          г. Набережные Челны, Московский проспект 161, Дом мебели
+        </p>
+      </Hero>
+      <main role="main">
         <CardSection>
           <div className="flex flex-wrap">
             <Card
@@ -144,7 +149,7 @@ export default function Landing() {
 
         {/* <SomeForm /> */}
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

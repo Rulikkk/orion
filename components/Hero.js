@@ -1,20 +1,18 @@
+import Pic from "./Pic.js";
+
 export default ({ children }) => (
-  <div
+  <header
     className="relative pt-16 pb-32 flex content-center items-center justify-center"
     style={{
       minHeight: "75vh"
     }}
   >
-    <picture>
-      <source srcSet={require("../public/bg.jpg?webp")} type="image/webp" />
-      <source srcSet={require("../public/bg.jpg")} type="image/jpeg" />
-      <img
-        className="w-full h-full object-cover object-center pointer-events-none absolute top-0"
-        style={{ filter: "brightness(50%)" }}
-        src={require("../public/bg.jpg")}
-        alt=""
-      />
-    </picture>
+    <Pic
+      webp={require("../public/bg.jpg?webp")}
+      jpeg={require("../public/bg.jpg")}
+      className="w-full h-full object-cover object-center pointer-events-none absolute top-0"
+      style={{ filter: "brightness(50%)" }}
+    />
     <div className="container relative mx-auto items-center flex flex-wrap">
       <div className="mx-auto w-full lg:w-8/12 px-4 text-center">
         {children}
@@ -39,5 +37,5 @@ export default ({ children }) => (
         />
       </svg>
     </div>
-  </div>
+  </header>
 );

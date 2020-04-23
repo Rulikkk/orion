@@ -18,12 +18,10 @@ const CardSection = ({ children }) => (
   </section>
 );
 
-const Phone = ({ children }) => (
-  <p className="mt-4">
-    <a className="text-xl text-white text-shadow" href={`tel:${children}`}>
-      {children}
-    </a>
-  </p>
+const Phone = ({ children, className }) => (
+  <a className={className} href={`tel:${children}`}>
+    {children}
+  </a>
 );
 
 export { JustText, CardSection, Phone };

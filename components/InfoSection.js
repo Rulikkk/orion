@@ -1,4 +1,5 @@
 import DoorIcon from "./DoorIcon.js";
+import Pic from "./Pic.js";
 
 export default ({ children }) => (
   <section className="relative py-20">
@@ -31,10 +32,10 @@ export default ({ children }) => (
           </div>
         </div>
         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
-          <img
-            alt="..."
+          <Pic
             className="max-w-full rounded-lg shadow-lg"
-            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+            jpeg={require("../public/d3.jpg")}
+            webp={require("../public/d3.jpg?webp")}
           />
         </div>
       </div>

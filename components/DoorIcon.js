@@ -5,7 +5,7 @@ import { faDoorOpen, faDoorClosed } from "@fortawesome/free-solid-svg-icons";
 
 import { useState } from "react";
 
-import useIntersect from "./useIntersect.js";
+// import useIntersect from "./useIntersect.js";
 
 const defState = false,
   delay = 1000;

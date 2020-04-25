@@ -34,9 +34,9 @@ const title = "Межкомнатные двери «Орион» г. Наб. Ч
     locality: "г. Набережные Челны",
     phone_number: "+7 (987) 239-06-42",
     country_name: "Российская Федерация",
-    image: "https://dveri-orion.ru/bg.jpg",
     site_name: "Магазин межкомнатных дверей «Орион»",
-    street_address: "Московский проспект 161, Дом мебели"
+    street_address: "Московский проспект 161, Дом мебели",
+    image: "https://dveri-orion.ru" + require("../public/og.jpg")
   };
 
 export default function Landing() {
@@ -46,7 +46,7 @@ export default function Landing() {
         <title>{title}</title>
         <meta name="title" content={title} />
         <meta name="description" content={description} />
-        {Object.entries(og_meta).map((og, val) => (
+        {Object.entries(og_meta).map(([og, val]) => (
           <meta name={"og:" + og} key={og} content={val} />
         ))}
       </Head>

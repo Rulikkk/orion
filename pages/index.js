@@ -9,6 +9,7 @@ import {
   faAlignJustify
 } from "@fortawesome/free-solid-svg-icons";
 
+import Head from "next/head";
 import Hero from "../components/Hero.js";
 import Card from "../components/Card.js";
 import Footer from "../components/Footer.js";
@@ -18,9 +19,37 @@ import PriceTable from "../components/PriceTable.js";
 import InfoSection from "../components/InfoSection.js";
 import { JustText, CardSection, Phone } from "../components/Util.js";
 
+const title = "Межкомнатные двери «Орион» г. Наб. Челны. Узнать цены и купить.",
+  description =
+    "В нашем магазине вы можете выбрать и заказать качественные межкомнатные двери недорого. Купить двери из экошпона, ПВХ, шпона. Стеклянные, ламинированные, раздвижные, распашные двери в наличии и под заказ.",
+  og_meta = {
+    title,
+    description,
+    type: "website",
+    locale: "ru_RU",
+    latitude: "55.744382",
+    longtitude: "52.431249",
+    email: "kamiltuykin@mail.ru",
+    url: "https://dveri-orion.ru",
+    locality: "г. Набережные Челны",
+    phone_number: "+7 (987) 239-06-42",
+    country_name: "Российская Федерация",
+    image: "https://dveri-orion.ru/bg.jpg",
+    site_name: "Магазин межкомнатных дверей «Орион»",
+    street_address: "Московский проспект 161, Дом мебели"
+  };
+
 export default function Landing() {
   return (
     <>
+      <Head>
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        {Object.entries(og_meta).map((og, val) => (
+          <meta name={"og:" + og} key={og} content={val} />
+        ))}
+      </Head>
       {/* <Navbar transparent /> */}
 
       <Hero>

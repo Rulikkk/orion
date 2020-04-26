@@ -7,5 +7,7 @@ export default () => (
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
     <meta name="msapplication-TileColor" content="#9f00a7" />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="mobile-wep-app-capable" content="yes" />
+    <meta name="apple-mobile-wep-app-capable" content="yes" />
   </>
 );

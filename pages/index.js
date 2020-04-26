@@ -14,12 +14,14 @@ import Hero from "../components/Hero.js";
 import Card from "../components/Card.js";
 import Footer from "../components/Footer.js";
 import BigCard from "../components/BigCard.js";
+import Favicon from "../components/Favicon.js";
 import FancyList from "../components/FancyList.js";
 import PriceTable from "../components/PriceTable.js";
 import InfoSection from "../components/InfoSection.js";
 import { JustText, CardSection, Phone } from "../components/Util.js";
 
-const title = "Межкомнатные двери «Орион» г. Наб. Челны. Узнать цены и купить.",
+const title =
+    "1 Межкомнатные двери «Орион» г. Наб. Челны. Узнать цены и купить.",
   description =
     "В нашем магазине вы можете выбрать и заказать качественные межкомнатные двери недорого. Купить двери из экошпона, ПВХ, шпона. Стеклянные, ламинированные, раздвижные, распашные двери в наличии и под заказ.",
   og_meta = {
@@ -36,7 +38,7 @@ const title = "Межкомнатные двери «Орион» г. Наб. Ч
     country_name: "Российская Федерация",
     site_name: "Магазин межкомнатных дверей «Орион»",
     street_address: "Московский проспект 161, Дом мебели",
-    image: "https://dveri-orion.ru" + require("../public/og.jpg")
+    image: "https://dveri-orion.ru" + require("../public/img/og.jpg")
   };
 
 export default function Landing() {
@@ -49,6 +51,7 @@ export default function Landing() {
         {Object.entries(og_meta).map(([og, val]) => (
           <meta name={"og:" + og} key={og} content={val} />
         ))}
+        <Favicon />
       </Head>
       {/* <Navbar transparent /> */}
 

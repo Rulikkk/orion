@@ -11,8 +11,8 @@ export default ({ children }) => (
     >
       <Pic
         className="w-full align-middle rounded-t-lg"
-        webp={require("../public/fab2.jpg?webp")}
-        jpeg={require("../public/fab2.jpg")}
+        webp={require("../public/img/fab2.jpg?webp")}
+        jpeg={require("../public/img/fab2.jpg")}
       />
       <blockquote className="relative p-8 mb-4">
         <svg

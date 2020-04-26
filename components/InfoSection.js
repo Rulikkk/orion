@@ -34,8 +34,8 @@ export default ({ children }) => (
         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
           <Pic
             className="max-w-full rounded-lg shadow-lg"
-            jpeg={require("../public/d3.jpg")}
-            webp={require("../public/d3.jpg?webp")}
+            jpeg={require("../public/img/d3.jpg")}
+            webp={require("../public/img/d3.jpg?webp")}
           />
         </div>
       </div>

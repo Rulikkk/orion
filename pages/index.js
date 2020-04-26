@@ -20,8 +20,7 @@ import PriceTable from "../components/PriceTable.js";
 import InfoSection from "../components/InfoSection.js";
 import { JustText, CardSection, Phone } from "../components/Util.js";
 
-const title =
-    "1 Межкомнатные двери «Орион» г. Наб. Челны. Узнать цены и купить.",
+const title = "Межкомнатные двери «Орион» г. Наб. Челны. Узнать цены и купить.",
   description =
     "В нашем магазине вы можете выбрать и заказать качественные межкомнатные двери недорого. Купить двери из экошпона, ПВХ, шпона. Стеклянные, ламинированные, раздвижные, распашные двери в наличии и под заказ.",
   og_meta = {

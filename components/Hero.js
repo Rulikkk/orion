@@ -8,8 +8,8 @@ export default ({ children }) => (
     }}
   >
     <Pic
-      webp={require("../public/bg.jpg?webp")}
-      jpeg={require("../public/bg.jpg")}
+      webp={require("../public/img/bg.jpg?webp")}
+      jpeg={require("../public/img/bg.jpg")}
       className="w-full h-full object-cover object-center pointer-events-none absolute top-0"
       style={{ filter: "brightness(50%)" }}
     />

@@ -1,8 +1,10 @@
 import Pic from "./Pic.js";
+// import addTwSupport from "./rewind";
 
-export default ({ children }) => (
+const Hero = ({ children }) => (
   <header
-    className="relative pt-16 pb-32 flex content-center items-center justify-center"
+    pt-16
+    className="relative pb-32 flex content-center items-center justify-center"
     style={{
       minHeight: "75vh"
     }}
@@ -39,3 +41,5 @@ export default ({ children }) => (
     </div>
   </header>
 );
+
+export default Hero;

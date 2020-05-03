@@ -3,8 +3,7 @@ import Pic from "./Pic.js";
 
 const Hero = ({ children }) => (
   <header
-    pt-16
-    className="relative pb-32 flex content-center items-center justify-center"
+    className="pt-16 relative pb-32 flex content-center items-center justify-center"
     style={{
       minHeight: "75vh"
     }}

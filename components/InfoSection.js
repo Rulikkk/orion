@@ -1,5 +1,7 @@
-import DoorIcon from "./DoorIcon.js";
 import Pic from "./Pic.js";
+import DoorIcon from "./DoorIcon.js";
+import MoreDoorsImage from "../public/img/d3.jpg?trace";
+import MoreDoorsImageWebp from "../public/img/d3.jpg?webp";
 
 export default ({ children }) => (
   <section className="relative py-20">
@@ -33,9 +35,12 @@ export default ({ children }) => (
         </div>
         <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
           <Pic
-            className="max-w-full rounded-lg shadow-lg"
-            jpeg={require("../public/img/d3.jpg")}
-            webp={require("../public/img/d3.jpg?webp")}
+            className="max-w-full relative"
+            imgClassName="rounded-lg shadow-lg"
+            loading="lazy"
+            trace={MoreDoorsImage.trace}
+            jpeg={MoreDoorsImage.src}
+            webp={MoreDoorsImageWebp}
           />
         </div>
       </div>

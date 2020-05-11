@@ -1,4 +1,6 @@
 import Pic from "./Pic.js";
+import FabricImage from "../public/img/fab2.jpg?trace";
+import FabricImageWebp from "../public/img/fab2.jpg?webp";
 
 export default ({ children }) => (
   <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
@@ -10,9 +12,12 @@ export default ({ children }) => (
       }}
     >
       <Pic
-        className="w-full align-middle rounded-t-lg"
-        webp={require("../public/img/fab2.jpg?webp")}
-        jpeg={require("../public/img/fab2.jpg")}
+        className="w-full align-middle relative"
+        imgClassName="rounded-t-lg"
+        loading="lazy"
+        trace={FabricImage.trace}
+        webp={FabricImageWebp}
+        jpeg={FabricImage.src}
       />
       <blockquote className="relative p-8 mb-4">
         <svg

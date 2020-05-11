@@ -1,4 +1,6 @@
 import Pic from "./Pic.js";
+import BackgroundImageWebp from "../public/img/bg.jpg?webp";
+import BackgroundImage from "../public/img/bg.jpg?trace";
 // import addTwSupport from "./rewind";
 
 const Hero = ({ children }) => (
@@ -9,10 +11,11 @@ const Hero = ({ children }) => (
     }}
   >
     <Pic
-      webp={require("../public/img/bg.jpg?webp")}
-      jpeg={require("../public/img/bg.jpg")}
-      className="w-full h-full object-cover object-center pointer-events-none absolute top-0"
-      style={{ filter: "brightness(50%)" }}
+      webp={BackgroundImageWebp}
+      jpeg={BackgroundImage.src}
+      trace={BackgroundImage.trace}
+      className="w-full h-full absolute top-0"
+      imgStyle={{ filter: "brightness(50%)" }}
     />
     <div className="container relative mx-auto items-center flex flex-wrap">
       <div className="mx-auto w-full lg:w-8/12 px-4 text-center">

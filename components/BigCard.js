@@ -1,6 +1,6 @@
 import Pic from "./Pic.js";
-import FabricImage from "../public/img/fab2.jpg?trace";
-import FabricImageWebp from "../public/img/fab2.jpg?webp";
+import FabricImage from "../public/img/fab3.jpg?trace";
+import FabricImageWebp from "../public/img/fab3.jpg?webp";
 
 export default ({ children }) => (
   <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">

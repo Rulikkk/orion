@@ -1,7 +1,7 @@
 import Pic from "./Pic.js";
 import DoorIcon from "./DoorIcon.js";
-import MoreDoorsImage from "../public/img/d3.jpg?trace";
-import MoreDoorsImageWebp from "../public/img/d3.jpg?webp";
+import MoreDoorsImage from "../public/img/d4.jpg?trace";
+import MoreDoorsImageWebp from "../public/img/d4.jpg?webp";
 
 export default ({ children }) => (
   <section className="relative py-20">

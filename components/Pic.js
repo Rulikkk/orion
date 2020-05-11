@@ -28,7 +28,7 @@ const PlainPic = ({
 const ProgressivePic = ({
   webp,
   jpeg,
-  trace,
+  placeholder,
   className,
   imgClassName,
   imgStyle,
@@ -45,7 +45,7 @@ const ProgressivePic = ({
       <img
         className={`w-full h-full object-cover object-center pointer-events-none ${imgClassName}`}
         style={imgStyle}
-        src={trace}
+        src={placeholder}
         alt={alt}
         loading={loading}
       />
@@ -69,9 +69,9 @@ const ProgressivePic = ({
   );
 };
 
-const Pic = ({ trace, ...others }) =>
-  trace ? (
-    <ProgressivePic trace={trace} {...others} />
+const Pic = ({ placeholder, ...others }) =>
+  placeholder ? (
+    <ProgressivePic placeholder={placeholder} {...others} />
   ) : (
     <PlainPic {...others} />
   );

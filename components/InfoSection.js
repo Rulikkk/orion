@@ -1,7 +1,8 @@
 import Pic from "./Pic.js";
 import DoorIcon from "./DoorIcon.js";
-import MoreDoorsImage from "../public/img/d4.jpg?trace";
-import MoreDoorsImageWebp from "../public/img/d4.jpg?webp";
+import MoreDoorsJpg from "../public/img/d4.jpg";
+import MoreDoorsWebp from "../public/img/d4.jpg?webp";
+import MoreDoorsLqip from "../public/img/d4.jpg?lqip";
 
 export default ({ children }) => (
   <section className="relative py-20">
@@ -38,9 +39,9 @@ export default ({ children }) => (
             className="max-w-full relative"
             imgClassName="rounded-lg shadow-lg"
             loading="lazy"
-            trace={MoreDoorsImage.trace}
-            jpeg={MoreDoorsImage.src}
-            webp={MoreDoorsImageWebp}
+            placeholder={MoreDoorsLqip}
+            jpeg={MoreDoorsJpg}
+            webp={MoreDoorsWebp}
           />
         </div>
       </div>

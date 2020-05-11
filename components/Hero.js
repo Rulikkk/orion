@@ -1,6 +1,8 @@
 import Pic from "./Pic.js";
 import BackgroundImageWebp from "../public/img/bg.jpg?webp";
-import BackgroundImage from "../public/img/bg.jpg?trace";
+import BackgroundImageJpg from "../public/img/bg.jpg";
+import BackgroundImageLqip from "../public/img/bg.jpg?lqip";
+
 // import addTwSupport from "./rewind";
 
 const Hero = ({ children }) => (
@@ -12,8 +14,8 @@ const Hero = ({ children }) => (
   >
     <Pic
       webp={BackgroundImageWebp}
-      jpeg={BackgroundImage.src}
-      trace={BackgroundImage.trace}
+      jpeg={BackgroundImageJpg}
+      placeholder={BackgroundImageLqip}
       className="w-full h-full absolute top-0"
       imgStyle={{ filter: "brightness(50%)" }}
     />

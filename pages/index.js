@@ -51,6 +51,10 @@ export default function Landing() {
           <meta name={"og:" + og} key={og} content={val} />
         ))}
         <Favicon />
+        <script
+          async
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+        />
       </Head>
       {/* <Navbar transparent /> */}
 

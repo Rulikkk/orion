@@ -5,8 +5,8 @@ media_folder: public/uploads
 public_folder: /uploads
 
 collections:
-  - name: "Doors_name"
-    label: "door_label"
+  - name: "door"
+    label: "Door"
     folder: "_doors"
     create: true
     fields:

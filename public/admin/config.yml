@@ -10,18 +10,22 @@ collections:
     label: Fabrics
     label_singular: Fabric
     folder: data/fabrics
-    extension: yml
+    extension: md
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Image", name: "thumbnail", widget: "image"}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "City", name: "city", widget: "string" }
+      - label: More images
+        name: moreImages
+        widget: list
+        field: {label: "Image", name: "thumbnail", widget: "image"}
   - name: doors
     label: Doors
     label_singular: Door
     folder: data/doors
-    extension: yml
+    extension: md
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
@@ -35,3 +39,7 @@ collections:
         displayFields: [ "title" ]
         searchFields: [ "title" ]
         valueField: title
+      - label: More images
+        name: moreImages
+        widget: list
+        field: {label: "Image", name: "thumbnail", widget: "image"}

@@ -1,0 +1,45 @@
+backend:
+  name: git-gateway
+  # name: test-repo
+  branch: cms
+media_folder: public/uploads
+public_folder: /uploads
+
+collections:
+  - name: fabrics
+    label: Fabrics
+    label_singular: Fabric
+    folder: data/fabrics
+    extension: md
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "City", name: "city", widget: "string" }
+      - label: More images
+        name: moreImages
+        widget: list
+        field: {label: "Image", name: "thumbnail", widget: "image"}
+  - name: doors
+    label: Doors
+    label_singular: Door
+    folder: data/doors
+    extension: md
+    create: true
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Image", name: "thumbnail", widget: "image"}
+      - {label: "Description", name: "body", widget: "markdown"}
+      - {label: "Price", name: "price", widget: "number", valueType: "int"}
+      - label: Fabric
+        name: fabric
+        widget: relation
+        collection: fabrics
+        displayFields: [ "title" ]
+        searchFields: [ "title" ]
+        valueField: title
+      - label: More images
+        name: moreImages
+        widget: list
+        field: {label: "Image", name: "thumbnail", widget: "image"}

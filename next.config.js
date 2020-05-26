@@ -9,6 +9,4 @@ module.exports = withPlugins([
       optimizeImagesInDev: true
     }
   ]
-
-  // your other plugins here
 ]);

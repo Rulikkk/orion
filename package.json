@@ -8,7 +8,6 @@
     "@fortawesome/free-solid-svg-icons": "5.13.0",
     "@fortawesome/react-fontawesome": "0.1.9",
     "@fullhuman/postcss-purgecss": "2.2.0",
-    "@mdx-js/mdx": "1.6.4",
     "@zeit/next-css": "1.0.1",
     "imagemin-mozjpeg": "8.0.0",
     "js-yaml-loader": "1.2.2",

@@ -1,4 +1,4 @@
-const mdx = require("@mdx-js/mdx");
+// const mdx = require("@mdx-js/mdx");
 
 const doors = {};
 
@@ -8,8 +8,8 @@ const doors = {};
 //     // door.description = mdx.sync(door.description);
 //     doors[door.title] = door;
 //   });
-// }
 
+// }
 // importAll(require.context("../data/doors/", true, /\.yml$/));
 // At build-time cache will be populated with all required modules.
 
